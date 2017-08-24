@@ -39,13 +39,13 @@ namespace OrderProcessingApplication
 
         public void clearScreenFields()
         {
-            this.stateInput.Text = null;
-            this.cityInput.Text = null;
-            this.nameInput.Text = null;
-            this.zipInput.Text = null;
-            this.addressInput.Text = null;
-            this.silverPhone.Text = null;
-            this.bluePhone.Text = null;
+            this.stateInput.Clear();
+            this.cityInput.Clear();
+            this.nameInput.Clear();
+            this.zipInput.Clear();
+            this.addressInput.Clear();
+            this.silverPhone.Clear();
+            this.bluePhone.Clear();
         }
 
         private void calcTotal_Click(object sender, EventArgs e)

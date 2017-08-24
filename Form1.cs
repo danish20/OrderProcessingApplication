@@ -37,6 +37,17 @@ namespace OrderProcessingApplication
             this.Close();
         }
 
+        public void clearScreenFields()
+        {
+            this.stateInput.Text = null;
+            this.cityInput.Text = null;
+            this.nameInput.Text = null;
+            this.zipInput.Text = null;
+            this.addressInput.Text = null;
+            this.silverPhone.Text = null;
+            this.bluePhone.Text = null;
+        }
+
         private void calcTotal_Click(object sender, EventArgs e)
         {
             this.calculateTotal();
@@ -45,6 +56,11 @@ namespace OrderProcessingApplication
         private void exit_Click(object sender, EventArgs e)
         {
             this.exitApp();
+        }
+
+        private void clearScreen_Click(object sender, EventArgs e)
+        {
+            this.clearScreenFields();
         }
     }
 }
